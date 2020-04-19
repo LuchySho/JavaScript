@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptTask 3</title>
+</head>
+<body>
+    
+    <script>
+       // Declare numberAlias Function accepting arguement/parameter
+        function numberAlias(arg) {
+            let result = []
+                for (i=1; i<arg+1 ; i++) {
+                    //Arguement checks  for divisible numbers by 2, 3 and 5 to determine the result
+                    if (i % 2 === 0 && i % 3 ===0 && i % 5 ===0) {                             
+                        result ="yu-gi-oh";
+                        console.log(result);                        
+                    }
+
+                    else if 
+                        (i % 2 === 0 && i % 3 ===0 ) {                             
+                        result = "yu-gi";
+                        console.log(result);                    
+                    }
+
+                    else if 
+                        (i % 2 === 0 && i % 5 ===0 ) {                             
+                        result= "yu-oh";
+                        console.log(result);    
+                    }
+
+                    else if 
+                        (i % 3 === 0 && i % 5 ===0 ) {                             
+                        result = "gi-oh";
+                        console.log(result);    
+                    }
+
+                    else if 
+                        (i % 2 === 0 ) {                             
+                        result = "yu";
+                        console.log(result);    
+                    }
+
+                    else if 
+                        (i % 3 === 0 ) {                             
+                        result = "gi";
+                        console.log(result);
+                    }
+
+                    else if 
+                        (i % 5 === 0 ) {                             
+                        result = "oh";
+                        console.log(result); 
+                    }
+
+                    else {
+                        console.log(i)
+                    }
+                }
+        }
+        //call function with 100 as arguement        
+        numberAlias(100);
+        
+        //call function with 200 as arguement
+        numberAlias(200);
+
+    </script>
+</body>
+</html>
